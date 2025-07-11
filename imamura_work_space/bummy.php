@@ -1,12 +1,6 @@
 <?php
-$host = '133.18.161.106';
-$port = 3306;
-$dbname = 'bbs';
-$user = 'bbs';
-$pass = 'bbs!!';
 
-$dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
-
+include 'Server_info.php';//サーバー情報をgitignoreで指定したファイルに隔離
 
 
 try {
