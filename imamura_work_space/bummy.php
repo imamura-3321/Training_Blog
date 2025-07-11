@@ -1,3 +1,4 @@
+
 <?php
 
 include 'Server_info.php';//サーバー情報をgitignoreで指定したファイルに隔離
