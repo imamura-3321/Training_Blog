@@ -4,7 +4,7 @@
 include 'Server_info.php';//サーバー情報をgitignoreで指定したファイルに隔離
 
 
-try {
+
     $pdo = new PDO($dsn, $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
