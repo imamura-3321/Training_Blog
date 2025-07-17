@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.main_area{/*要素の箱を作り、中心にそろえる*/
+   text-align: center;
+   border: 2px solid #aaa;
+   width: 300px;   
+   margin: 0 auto; 
+   padding: 10px;
+}
+.elementArea{/*要素の塊を左に*/
+  margin-top: 30px;
+  text-align: left;
+ 
+}
+.inputRow {/*要素を左右に振り分けるため*/
+  display: flex;
+  align-items: baseline; /* 文字のベースラインで揃える */
+}
+.inputRow label {
+  font-size: 15px;
+  width: 130px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.inputRow span {
+  font-size: 12px;
+  flex: 1;
+  word-break: break-all;
+}
+
+.submitConfirmArea {
+   margin-top: 16px;
+  display: flex;
+  justify-content: space-between;  /* 子要素の間を最大限広げる */
+  line-height: 1; /* 高さ調整 */
+  align-items: center;   /* 縦方向の中央揃え */
+  gap: 10px;             /* テキストとボタンの間のスペース */
+}
+.submitConfirmArea span {
+  font-size: 12px;
+  line-height: 1.5;     /* テキストの高さを調整 */
+}
+.submitArea input[type="submit"] {
+  font-size: 8px;
+  width: 40px; 
+  vertical-align: middle; /* ボタンの縦位置調整 */
+}

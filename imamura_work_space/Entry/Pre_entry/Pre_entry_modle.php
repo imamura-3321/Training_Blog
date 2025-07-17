@@ -19,14 +19,11 @@
         }
 
 
-        public function checkUserNameExists($username){
-            $sql ="SELECT COUNT(*) FROM LoginTest WHERE user_name =:username";//クエリを作成　ユーザーネームに被りがないかの確認 SQLインジェクション対策でプリペアドステートメント 
+        public function inputPreUser($username){
+            $sql ="INSERT INTO user_name ,login_pw ,  email_address, user_status, created_user  VALUES ";//クエリを作成　ユーザーネームに被りがないかの確認 SQLインジェクション対策でプリペアドステートメント 
             $stmt = $this->dbh->prepare($sql);//PDOオブジェクトにクエリを渡して準備させる　prepare関数はPODステートメントオブジェクトが返される
             $stmt->bindValue(':username',$username,PDO::PARAM_STR);//プレースホルダに値をセット　プレースホルダ名 　入れたい名前　渡す型の指定　
             $stmt->execute();//準備したクエリを実行
-            $count=$stmt->fetchColumn(); //実行したstmtクエリの実行結果からカラムの値を一つだけ取得
-            return $count; // 結果を返すようにする
-
         }
   
     }
