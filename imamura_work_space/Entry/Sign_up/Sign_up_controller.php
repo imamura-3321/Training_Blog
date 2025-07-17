@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 
 session_start();
 include '../../Server_info.php';//サーバー情報をgitignoreで指定したファイルに隔離したのでそこからインクルード
-include 'Sign_up_modle.php';//モデルからDB接続関連を持ってくる
+include 'Sign_up_model.php';//モデルからDB接続関連を持ってくる
 
 $errorMessage = "";//エラーメッセージを初期化 Sign_up_viewで使用する変数のため、先に宣言しないと読み込みエラーを吐く
 $result;//実行結果
@@ -71,7 +71,7 @@ include 'Sign_up_view.php';
         }
     }
 
-    
+
     function nameJudge($inName,$count,&$results) {//ユーザーネーム確認
         if($count==0){
             $results['username']=['judge' => true];//判定に判定情報を保存
