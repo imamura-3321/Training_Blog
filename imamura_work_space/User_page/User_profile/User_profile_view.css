@@ -19,14 +19,13 @@ h2 {
   text-align: left;
  
 }
-.bigText {
-  text-align: center;
-   
-}
-
 .message {
   margin-top: 30px;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
  
+}
+.submitArea{
+  margin-top: 10px;
+   text-align: right;
 }

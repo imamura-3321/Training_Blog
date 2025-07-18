@@ -14,13 +14,18 @@
     <h2>ユーザープロフィール</h2>
     <div class="main_area"><!--仮登録-->
       <div class="elementArea">
-        <div class="bigText">
-        </div>
         <div class="message">
-          <span>ユーザープロフィールを入力してください<span>
-      
+          <?php foreach ($userInfo as $key => $value) {?>
+            <b><?= htmlspecialchars($key)?></b>:<?= htmlspecialchars($value) ?><br>
+            
+          <?php } ?>
+        </div>
       </div>
-      </div>
+      <form method="post" action="User_profile_controller.php">
+        <div class="submitArea"> 
+          <input type = "submit" id="Logout" name=Logout value = "ログアウト" > 
+       </div>
+        </form>
     </div>
 
 </body>
