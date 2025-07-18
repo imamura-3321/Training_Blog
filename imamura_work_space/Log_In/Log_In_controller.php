@@ -29,7 +29,7 @@ $result;//実行結果
             echo "成功";
                 $_SESSION['user']=[
                     'username' => $inName,
-                     'logged_in' => true,];
+                    'logged_in' => true,];
             header("Location: ../User_page/User_profile/User_profile_controller.php");//該当ページに遷移ト
             exit;
 
