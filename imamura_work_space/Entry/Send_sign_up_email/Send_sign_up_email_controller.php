@@ -16,7 +16,7 @@ $sendURL="";
 
   
   if(!isset($_SESSION['alreadySend'])){
-   echo "bbbbb";
+
              $hashedPass=password_hash($_SESSION['pass'], PASSWORD_DEFAULT);//パスワードをハッシュ化して保存
              $name = $_SESSION['name'];//セッションに値を保存 
              $mailAddress = $_SESSION['mail'] ;
@@ -34,13 +34,6 @@ $sendURL="";
   
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {//ユーザーからのアクションがあった時に起動
-        
-     
-        
-      
-         
-       
-}
+
  include 'Send_sign_up_email_view.php';
 
