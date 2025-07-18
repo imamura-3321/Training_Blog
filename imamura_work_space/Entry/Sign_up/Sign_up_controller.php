@@ -19,7 +19,7 @@ $result;//実行結果
 
        
        
-        if(signUpJudge($inName,$inPass,$inPassRe,$inEmail,$errorMessage,$serverInfo));{//新規登録認証){
+        if(signUpJudge($inName,$inPass,$inPassRe,$inEmail,$errorMessage,$serverInfo)){//新規登録認証){
             
             $_SESSION['name'] = $inName;//セッションに値を保存 
             $_SESSION['pass'] = $inPass;
@@ -40,7 +40,7 @@ include 'Sign_up_view.php';
         //$success_message = "";//成功メッセージを初期化
 
         $dbConnect = new SignUpModel($serverInfo);//データベースに接続するクラスをインスタンス
-        $count=$dbConnect ->checkUserNameExists($inName);
+        $count=$dbConnect->checkUserNameExists($inName);
 
        
         $results = [];

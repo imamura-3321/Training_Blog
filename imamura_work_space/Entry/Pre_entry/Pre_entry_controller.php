@@ -7,7 +7,8 @@ include 'Pre_entry_view.php';
 if($_SERVER['REQUEST_METHOD'] === 'POST') {//ユーザーからのアクションがあった時に起動
     if (isset($_POST['Yes'])) {
     // 「はい」が押された
-    header("Location: ../Pre_entry/Pre_entry_controller.php");//該当ページに遷移
+    unset($_SESSION['alreadySend']); //次のページで、初回起動判定に使うセッション変数をリセット
+    header("Location: ../Send_sign_up_email/Send_sign_up_email_controller.php");//該当ページに遷移
     exit;
     }elseif (isset($_POST['No'])) {
     // 「いいえ」が押された
