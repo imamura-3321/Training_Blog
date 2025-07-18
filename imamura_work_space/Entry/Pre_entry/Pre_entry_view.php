@@ -27,7 +27,7 @@
           <span><?php echo htmlspecialchars(maskPassword($_SESSION['pass']));;?></span>
         </div>
       </div>
-      <form method="post" action="">
+      <form action="Pre_entry_controller.php" method="post"> <!-- Pre_entry_controller.phpとやり取りする -->
         <div class=submitConfirmArea>
            <span>以上の内容で登録しますか？</span>
             <div class="submitArea"> 

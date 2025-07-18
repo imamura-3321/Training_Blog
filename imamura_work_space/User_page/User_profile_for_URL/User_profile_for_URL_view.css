@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.main_area{/*要素の箱を作り、中心にそろえる*/
+   text-align: center;
+   border: 2px solid #aaa;
+   width: 300px;   
+   margin: 0 auto; 
+   padding: 10px;
+}
+.elementArea{/*要素の塊を左に*/
+  
+  text-align: left;
+ 
+}
+.bigText {
+  text-align: center;
+   
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+ 
+}
